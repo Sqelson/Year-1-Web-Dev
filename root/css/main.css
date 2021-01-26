@@ -1,0 +1,212 @@
+/* Main CSS style page. */
+/* The css that will be initially applied to the whole pages. */
+/* The use of px in this style sheet is supplemented by the media.css, although not best practise (compared to em or rem) it still works. */
+body,
+html {
+  height: 100%; /* Sets the default height of content to 100%. */
+  padding: 0; /* Sets the default padding of content to 0. */
+  margin: 0; /* Sets the default margin of content to 0. */
+  font-family: "Segoe UI", sans-serif; /* Sets the default font of text to Segoe UI. */
+  background-color: black; /* Sets the default background colour to black. Contrasting with the white text ensures AAA WCAG rating for colour is achieved. */
+}
+
+/* Ensure proper sizing on the web page. */
+* {
+  box-sizing: border-box;
+}
+
+/* A selection of column classes, allowing lots of different widths. */
+/* Although only 3 of these classes are used currently, in the future more could be used as the website changes. */
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
+  width: 100%;
+}
+
+/* Sets the rest of the settings for the column boxes, irregardless of their width.*/
+[class*="col-"] {
+  border: 15px groove #292930; /* Sets the border to be 15px, with a groove design and a dark grey colour. */
+  padding: 25px; /* Sets the padding of all the content to be 25px, so it is spaced out in the box more. */
+  background-color: white; /* Sets the background colour of the box to be white, contrasting against the black (fulfils WCAG principles). */
+}
+
+/* Styles the top navigation bar. */
+.navbar-top {
+  overflow: hidden; /* Hide overflow. */
+  background-color: black; /* Sets the background color to black. */
+}
+
+/* Styles the navigation bar button links. */
+.navbar-top a {
+  float: left; /* Makes sure that the links stay side-by-side. */
+  color: white; /* Sets the text colour to white. */
+  text-align: center; /* Centres the text. */
+  padding: 28px 40px; /* Adds some padding. */
+  text-decoration: none; /* Removes the underline. */
+}
+
+/* Applies various new css upon mouse hover. */
+.navbar-top a:hover {
+  background-color: grey; /* Changes the background colour to grey. */
+  color: black; /* Changes the text colour to black. */
+  text-decoration: underline; /* Adds an underline. */
+}
+
+/* The hero image. */
+/* https://www.pexels.com/photo/codes-coding-computer-programming-270488/ */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image. This will make the text easier to read. */
+  /* This is done by changing the 'a' part of rgba (red, green, blue and transparency), affecting the transparency by 33% (top and bottom gradients respectively). */
+  /* Used the URL function here as the hero image is unchanging regardless of page, probably should have done this with the social icons too to reduce re-writing code. */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.33), rgba(0, 0, 0, 0.33)),
+    URL("../img/heroimage.jpg");
+  height: 50%; /* Sets the height to 50% to work with different resolutions. */
+  /* Position and center the image to scale nicely on all screens. */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* The text inside the hero-image. */
+.hero-text {
+  position: absolute; /* Sets the position to absolute (The element is positioned relative to its first positioned (not static) ancestor element.).
+  Relative would not work and moved the navbar up. */
+  /* This combination of css code ensures that the text remains in the centre. */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; /* Sets the colour of the text to white. */
+  font-size: 2vw; /* Sets the font size to 2% viewport width. */
+}
+
+/* The row class. */
+.row {
+  display: flex; /*	Displays an element as a block-level flex container. Ensures the rows remain consistent at different page sizes. */
+  flex-wrap: wrap; /* Makes the flexible row wrap. This allows media queries to work with the rows. */
+}
+
+/* Default image setting for images on the CPD page (will have more images in the completed CPD). */
+.image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Special image settings for my self image on the about me page, adds an oval effect through border radius. */
+.image #image-self {
+  border-radius: 50%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Special image settings for the devsoc logo on the CPD page, ensures it remains at 50% width and height. */
+.image #image-devsoc {
+  width: 50%;
+  height: 50%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Video settings to centre videos like the hobby one. */
+.video {
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* The footer section. */
+footer {
+  color: white; /* Sets the text colour to white (contrasts against the black). */
+  text-align: center; /* Aligns all text to the centre of the footer. */
+}
+
+/* Spaces the text out in the footer. */
+footer p {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* The socials section (in the footer). */
+.socials {
+  justify-content: center; /* Centres the content. */
+}
+
+/* Spaces the social icons out. */
+.socials img {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+/* Scales the icons in the socials section upon hover by 1.1. */
+.socials img:hover {
+  transform: scale(1.1);
+}
+
+/* Ensures the social media icons are the correct size (also means don't have to enter height and width every time, which is a deprecated method). */
+.social-icon {
+  height: 10vw;
+  width: 10vw;
+}
+
+/* Styles the bottom navigation bar. */
+.navbar-bottom {
+  overflow: hidden; /* Hide overflow. */
+  background-color: black; /* Sets the background color to black. */
+  padding: 5px;
+}
+
+/* Styles the bottom navigation bar button links. */
+.navbar-bottom a {
+  max-width: 100%; /* Sets the width of the buttons to 100% of the screen. */
+  display: block; /* Sets the display to block, as it starts on a new line and takes up the whole width. */
+  color: white; /* Sets the text colour to white. */
+  text-align: center; /* Centres the text. */
+  padding: 28px 40px; /* Adds some padding. */
+  text-decoration: none; /* Removes the underline. */
+}
+
+/* Applies various new css upon mouse hover. */
+.navbar-bottom a:hover {
+  background-color: grey; /* Changes the background colour to grey. */
+  color: black; /* Changes the text colour to black. */
+  text-decoration: underline; /* Adds an underline. */
+}

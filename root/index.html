@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!--Sets the language of the website.-->
+<html lang="en">
+  <!--The head of the website, containing all the metadata for the webpage.-->
+  <head>
+    <!--The meta name being desciption along with the content describes what text will appear if the website is live on the internet and what appears on search browsers before clicking to access the website.-->
+    <meta
+      name="description"
+      content="Jake Elson is a 1st year student, studying software engineering at Nottingham Trent University. This is their CPD website."
+    />
+    <!--The meta charset sets out the character set that will be used in the website, in this case utf-8 which is the standard encoding.-->
+    <meta charset="utf-8" />
+    <!--The meta name keywords defines keywords for search engines to pick up.-->
+    <meta name="keywords" content="HTML, CSS, CPD, NTU" />
+    <!--The meta name robots tells the search engine crawler to both index the whole web page and follow all the links in the web page.-->
+    <meta name="robots" content="index,follow" />
+    <!--The meta name viewport here ensures that the website is mobile friendly by scaling it down to the device width.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Page Title that will be at the top of the screen where the tabs are.-->
+    <title>CPD Website - Home</title>
+    <!--The icon link sets the icon in the tab as the image linked.-->
+    <!--"https://icon-icons.com/icon/globe-internet-sphere-web/121385".-->
+    <link rel="icon" href="img\logo.ico" />
+    <!--The link to the main css stylesheet.-->
+    <link rel="stylesheet" href="css\main.css" />
+    <!--The link to the media css stylesheet.-->
+    <link rel="stylesheet" href="css\media.css" />
+  </head>
+  <!--The body of the website, containing all the actual content for the webpage.-->
+  <body>
+    <!--The header, which only contains the navbar.-->
+    <header>
+      <div class="navbar-top">
+        <a href="index.html">Home</a>
+        <a href="aboutme.html">About Me</a>
+        <a href="cpd.html">CPD</a>
+      </div>
+    </header>
+
+    <!--The hero image of the page-->
+    <div class="hero-image">
+      <div class="hero-text">
+        <!--h1 includes an abbreviation tag, which displays text if you hover over it.-->
+        <h1>
+          Jake Elson -
+          <abbr title="Continuing Professional Development">CPD</abbr> Website
+        </h1>
+      </div>
+    </div>
+
+    <!--The main content of the webpage.-->
+    <main>
+      <!--The first row containing information.-->
+      <div class="row">
+        <!--Uses col-12 to set the row width equal to the whole page.-->
+        <div class="col-12">
+          <h2>Welcome to my website.</h2>
+          <p>
+            This is my CPD website, which includes this home page, an about me
+            page and a page on my CPD projects and hours.
+          </p>
+        </div>
+      </div>
+
+      <!--The second row containing information.-->
+      <div class="row">
+        <!--Uses col-6 to seperate the row into 2 rows, each half the webpages width.-->
+        <div class="col-6">
+          <h2>What is CPD?</h2>
+          <p>
+            CPD stands for Continuing Professional Development. It involves
+            tracking and documenting the skills, knowledge and experience that
+            are gained both formally and informally as you work, beyond any
+            initial training.
+          </p>
+          <p>
+            To summarise, it is a record of what you experience, learn and
+            apply.
+          </p>
+        </div>
+        <div class="col-6">
+          <h2>How does it work?</h2>
+          <p>
+            Currently the specification is that CPD must be evidenced
+            sufficiently, whether by a confirmation email, screenshots or both.
+            The grades are:
+          </p>
+          <ul>
+            <li>10 hours of CPD engagement: 3LOW.</li>
+            <li>20 hours of CPD engagement: 2.1HIGH.</li>
+            <li>30 hours of CPD engagement: 1EXC.</li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <!--The footer of the webpage, containing my information and social media image links(not my actual socials!).-->
+    <footer>
+      <p>Jake Elson Inc. &copy; All Rights Reserved</p>
+      <p>N0954076</p>
+      <p>Software Engineering BSc</p>
+      <p>COMP6ii</p>
+      <!--The social media image links.-->
+      <div class="socials">
+        <!--Icon made by "https://www.flaticon.com/authors/pixel-perfect"-->
+        <a href="https://github.com/"
+          ><img
+            class="social-icon"
+            src="img\github.png"
+            alt="Github Logo"
+            title="GitHub"
+        /></a>
+        <!--Icon made by "https://www.flaticon.com/authors/freepik"-->
+        <a href="https://www.linkedin.com/"
+          ><img
+            class="social-icon"
+            src="img\linkedin.png"
+            alt="LinkedIn Logo"
+            title="LinkedIn"
+        /></a>
+        <!--Icon made by "https://www.flaticon.com/authors/freepik"-->
+        <a href="facebook.com/"
+          ><img
+            class="social-icon"
+            src="img\facebook.png"
+            alt="Facebook Logo"
+            title="Facebook"
+        /></a>
+        <!--Icon made by "https://www.flaticon.com/authors/pixel-perfect"-->
+        <a href="twitter.com/"
+          ><img
+            class="social-icon"
+            src="img\twitter.png"
+            alt="Twitter Logo"
+            title="Twitter"
+        /></a>
+        <!--Icon made by "https://www.flaticon.com/authors/pixel-perfect"-->
+        <a href="instagram.com/"
+          ><img
+            class="social-icon"
+            src="img\instagram.png"
+            alt="Instagram Logo"
+            title="Instagram"
+        /></a>
+        <div class="navbar-bottom">
+          <a href="index.html">Home</a>
+          <a href="aboutme.html">About Me</a>
+          <a href="cpd.html">CPD</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

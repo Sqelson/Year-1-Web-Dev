@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!--Sets the language of the website.-->
+<html lang="en">
+  <!--The head of the website, containing all the metadata for the webpage.-->
+  <head>
+    <!--The meta name being desciption along with the content describes what text will appear if the website is live on the internet and what appears on search browsers before clicking to access the website.-->
+    <meta
+      name="description"
+      content="Jake Elson is a 1st year student, studying software engineering at Nottingham Trent University. This is their CPD website."
+    />
+    <!--The meta charset sets out the character set that will be used in the website, in this case utf-8 which is the standard encoding.-->
+    <meta charset="utf-8" />
+    <!--The meta name keywords defines keywords for search engines to pick up.-->
+    <meta name="keywords" content="HTML, CSS, CPD, NTU" />
+    <!--The meta name robots tells the search engine crawler to both index the whole web page and follow all the links in the web page.-->
+    <meta name="robots" content="index,follow" />
+    <!--The meta name viewport here ensures that the website is mobile friendly by scaling it down to the device width.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Page Title that will be at the top of the screen where the tabs are.-->
+    <title>CPD Website - About Me</title>
+    <!--The icon link sets the icon in the tab as the image linked.-->
+    <!--"https://icon-icons.com/icon/globe-internet-sphere-web/121385".-->
+    <link
+      rel="icon"
+      href="img\logo.ico"
+    />
+    <!--The link to the main css stylesheet.-->
+    <link rel="stylesheet" href="css\main.css" />
+    <!--The link to the media css stylesheet.-->
+    <link rel="stylesheet" href="css\media.css" />
+  </head>
+  <!--The body of the website, containing all the actual content for the webpage.-->
+  <body>
+    <!--The header, which only contains the navbar.-->
+    <header>
+      <div class="navbar-top">
+        <a href="index.html">Home</a>
+        <a href="aboutme.html">About Me</a>
+        <a href="cpd.html">CPD</a>
+      </div>
+    </header>
+
+    <!--The hero image of the page-->
+    <div class="hero-image">
+      <div class="hero-text">
+        <h1>About Me</h1>
+      </div>
+    </div>
+
+    <!--The main content of the webpage.-->
+    <main>
+      <!--The main row of this page containing information.-->
+      <div class="row">
+        <!--Uses col-4 to set the row width equal to a third of the page. Repeated 2 times more below to fill the whole page.-->
+        <div class="col-4">
+          <h2>About Me</h2>
+          <p>
+            I am Jake Elson, a 22 year old student studying at Nottingham Trent
+            University.
+          </p>
+          <p>
+            My interests include programming and science, weightlifting, most
+            forms of media, brain training, gaming, politics and ethics and
+            generally expanding my general knowledge on subjects I am interested
+            in.
+          </p>
+        </div>
+        <div class="col-4">
+          <h2>Self Image</h2>
+          <p>Here is an picture of me.</p>
+          <!--The special self image is implemented here. The singular case of using an id to overwrite a classes rules.-->
+          <div class="image">
+            <img
+              id="image-self"
+              src="img\selfimage.jpg"
+              alt="Self Image"
+              width="50%"
+              height="50%"
+              title="Self Image"
+            />
+          </div>
+        </div>
+        <div class="col-4">
+          <h2>Hobby Video</h2>
+          <!--The singular case of using a video in the website currently.-->
+          <p>Here is a video of me lifting weights.</p>
+            <video class="video" width="100%" height="100%" title="Lifting Video" controls>
+              <source src="img\lifting.mp4" />
+            </video>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!--The footer of the webpage, containing my information and social media image links(not my actual socials!).-->
+    <footer>
+      <p>Jake Elson Inc. &copy; All Rights Reserved</p>
+      <p>N0954076</p>
+      <p>Software Engineering BSc</p>
+      <p>COMP6ii</p>
+      <!--The social media image links.-->
+      <div class="socials">
+        <!--Icon made by "https://www.flaticon.com/authors/pixel-perfect"-->
+        <a href="https://github.com/"
+          ><img
+          class="social-icon"
+            src="img\github.png"
+            alt="Github Logo"
+            title="GitHub"
+        /></a>
+        <!--Icon made by "https://www.flaticon.com/authors/freepik"-->
+        <a href="https://www.linkedin.com/"
+          ><img
+            class="social-icon"
+            src="img\linkedin.png"
+            alt="LinkedIn Logo"
+            title="LinkedIn"
+        /></a>
+        <!--Icon made by "https://www.flaticon.com/authors/freepik"-->
+        <a href="facebook.com/"
+          ><img
+            class="social-icon"
+            src="img\facebook.png"
+            alt="Facebook Logo"
+            title="Facebook"
+        /></a>
+        <!--Icon made by "https://www.flaticon.com/authors/pixel-perfect"-->
+        <a href="twitter.com/"
+          ><img
+            class="social-icon"
+            src="img\twitter.png"
+            alt="Twitter Logo"
+            title="Twitter"
+        /></a>
+        <!--Icon made by "https://www.flaticon.com/authors/pixel-perfect"-->
+        <a href="instagram.com/"
+          ><img
+            class="social-icon"
+            src="img\instagram.png"
+            alt="Instagram Logo"
+            title="Instagram"
+        /></a>
+        <div class="navbar-bottom">
+          <a href="index.html">Home</a>
+          <a href="aboutme.html">About Me</a>
+          <a href="cpd.html">CPD</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
